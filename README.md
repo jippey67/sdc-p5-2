@@ -9,7 +9,7 @@ First a car finding algorithm has to be set up. This involves obtaining a collec
 Within the project a couple of data sources are available. I chose to combine all of them to have a broad collection of cars and notcars. I ended up with a set of 8792 images of cars and a set of 8968 images that contain images of roads and surroundings, without cars in them. Both sets are in RGB color space and of format 64x64 pixels. They are also of  approximatelythe same size, so no augmentation of one of the calsses is required.
 Below are 5 examples of cars en 5 examples of non cars. 
 
-<img src="https://cloud.githubusercontent.com/assets/23193240/22543697/0a763e38-e932-11e6-859e-6767d16b2a6f.jpg" width="128" height="128" /> 
+<img src="https://github.com/jippey67/sdc-p5-2/blob/master/images/1.jpg" width="128" height="128" /> 
 <img src="https://cloud.githubusercontent.com/assets/23193240/22543698/0a8d830e-e932-11e6-9c46-fb242c1301d0.jpg" width="128" height="128" /> 
 <img src="https://cloud.githubusercontent.com/assets/23193240/22543699/0a94c9de-e932-11e6-819e-be601985963d.jpg" width="128" height="128" /> 
 <img src="https://cloud.githubusercontent.com/assets/23193240/22543700/0a959c74-e932-11e6-950f-0139c10eb307.jpg" width="128" height="128" /> 
