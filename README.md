@@ -10,16 +10,16 @@ Within the project a couple of data sources are available. I chose to combine al
 Below are 5 examples of cars en 5 examples of non cars. 
 
 <img src="https://github.com/jippey67/sdc-p5-2/blob/master/images/1.jpg" width="128" height="128" /> 
-<img src="https://cloud.githubusercontent.com/assets/23193240/22543698/0a8d830e-e932-11e6-9c46-fb242c1301d0.jpg" width="128" height="128" /> 
-<img src="https://cloud.githubusercontent.com/assets/23193240/22543699/0a94c9de-e932-11e6-819e-be601985963d.jpg" width="128" height="128" /> 
-<img src="https://cloud.githubusercontent.com/assets/23193240/22543700/0a959c74-e932-11e6-950f-0139c10eb307.jpg" width="128" height="128" /> 
-<img src="https://cloud.githubusercontent.com/assets/23193240/22543789/5dc50182-e932-11e6-98e7-15e9a6b55b81.jpg" width="128" height="128" /> 
+<img src="https://github.com/jippey67/sdc-p5-2/blob/master/images/2.jpg" width="128" height="128" /> 
+<img src="https://github.com/jippey67/sdc-p5-2/blob/master/images/3.jpg" width="128" height="128" /> 
+<img src="https://github.com/jippey67/sdc-p5-2/blob/master/images/4.jpg" width="128" height="128" /> 
+<img src="https://github.com/jippey67/sdc-p5-2/blob/master/images/5.jpg" width="128" height="128" /> 
 
-<img src="https://cloud.githubusercontent.com/assets/23193240/22543711/133bc4fc-e932-11e6-93e6-50b527f17432.jpg" width="128" height="128" /> 
-<img src="https://cloud.githubusercontent.com/assets/23193240/22543713/133f3f2e-e932-11e6-8b7e-887529ea55e3.jpg" width="128" height="128" /> 
-<img src="https://cloud.githubusercontent.com/assets/23193240/22543712/133db17c-e932-11e6-8737-c0a4c630509f.jpg" width="128" height="128" /> 
-<img src="https://cloud.githubusercontent.com/assets/23193240/22543714/133f54aa-e932-11e6-8dd0-370e2d227a79.jpg" width="128" height="128" /> 
-<img src="https://cloud.githubusercontent.com/assets/23193240/22543796/6819e67a-e932-11e6-8863-f57416bd8b7e.jpg" width="128" height="128" /> 
+<img src="https://github.com/jippey67/sdc-p5-2/blob/master/images/6.jpg" width="128" height="128" /> 
+<img src="https://github.com/jippey67/sdc-p5-2/blob/master/images/7.jpg" width="128" height="128" /> 
+<img src="https://github.com/jippey67/sdc-p5-2/blob/master/images/8.jpg" width="128" height="128" /> 
+<img src="https://github.com/jippey67/sdc-p5-2/blob/master/images/9.jpg" width="128" height="128" /> 
+<img src="https://github.com/jippey67/sdc-p5-2/blob/master/images/10.jpg" width="128" height="128" /> 
 
 The data were labeled "1" for cars and "0" for non cars, and after creating a random sequence, split into 80% training data and 20% test data. The training data were fed to various collections of feature extractors - as described below - and afterward the feature values were normalized inorder to prevent one feature dominating the others.
 
@@ -126,16 +126,16 @@ total number of frames| | | | |246|
 
 The two pictures below show found cars and false positives
 
-<img src="https://cloud.githubusercontent.com/assets/23193240/22651609/f36adc08-ec83-11e6-9c6a-b2d773c8811f.png" width="400" height="200" /> 
-<img src="https://cloud.githubusercontent.com/assets/23193240/22652640/7fcfd038-ec87-11e6-9b0d-e3fe639b8a43.png" width="400" height="200" /> 
+<img src="https://github.com/jippey67/sdc-p5-2/blob/master/images/20.png" width="400" height="200" /> 
+<img src="https://github.com/jippey67/sdc-p5-2/blob/master/images/21.png" width="400" height="200" /> 
 
 To filter out as many false positives as possible I used a two step filtering process. In the first step the 'heat' of the analysed image was determined. As the cars are detected in a multiple of the sliding windows, a lot of heat is generated wher the cars are. It is anticipated that false positives generate less heat. So when the heat was smaller or equal to 2, this was marked as a false positive and left out of the heat of the image at hand.
 The next step was an averaging mechanism with another filter. All heat maps were fed to a queue of length 10. All layers in the queue are then added up. Pixels with some heat, but below or equal to threshold of 4 are once again considered to be potential false positives, and are therefore removed.
 
 Below are two images of the road and the heat generated (in green).
 
-<img src="https://cloud.githubusercontent.com/assets/23193240/22664345/869338f0-ecb0-11e6-938c-46dd89b11989.png" width="400" height="200" /> 
-<img src="https://cloud.githubusercontent.com/assets/23193240/22664344/86928536-ecb0-11e6-8f29-822d956f1147.png" width="400" height="200" /> 
+<img src="https://github.com/jippey67/sdc-p5-2/blob/master/images/30.png" width="400" height="200" /> 
+<img src="https://github.com/jippey67/sdc-p5-2/blob/master/images/31.png" width="400" height="200" /> 
 
 ## Python programs used in this project
 
