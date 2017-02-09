@@ -149,7 +149,7 @@ A third Python file 'lesson_functions.py' is included. This contains a couple of
 
 ## The result
 
-The whole pipeline led to the creation of this [video](https://github.com/jippey67/sdc-p5/blob/master/boxed_videop.mp4). It tracks the cars in the neighborhood very well. And there is the occasional false positive on the left side. I could have easily left that one out by starting the sliding windows more towards the center of the image, but as that would deteriorate the generality of the pipeline I decided to keep it in.
+The whole pipeline led to the creation of this [video](https://github.com/jippey67/sdc-p5-2/blob/master/boxed_videop.mp4). It tracks the cars in the neighborhood very well. And there is the occasional false positive on the left side. I could have easily left that one out by starting the sliding windows more towards the center of the image, but as that would deteriorate the generality of the pipeline I decided to keep it in.
 
 ## Discussion
 
